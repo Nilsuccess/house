@@ -42,12 +42,23 @@ public class UserInfoController {
 
     }
 
+    /**
+     * 列表获取
+     *
+     * @return 用户列表
+     */
     @GetMapping("list")
     public RestResponse getList() {
         return RestResponse.createSuccessResult(userInfoService.list());
     }
 
 
+    /**
+     * 用户分页列表
+     *
+     * @param userInfoVo 参数封装
+     * @return 用户分页列表
+     */
     @PostMapping("page")
     public RestResponse getPage(@RequestBody UserInfoVo userInfoVo) {
         Page<UserInfo> userInfoPage = new Page<>(userInfoVo.getPageIndex(), userInfoVo.getPageSize());
