@@ -13,7 +13,7 @@ import org.junit.Test;
  * {@link GeneratorServiceEntity}
  *
  * @author NIL
- * @date 2020年12月29日
+ * @date 2020年12月29日 mybatis plus 逆向工程
  */
 public class GeneratorServiceEntity {
 
