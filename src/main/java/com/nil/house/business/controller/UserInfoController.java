@@ -54,7 +54,7 @@ public class UserInfoController {
 
 
     /**
-     * 用户分页列表
+     * 用户分页列表获取
      *
      * @param userInfoVo 参数封装
      * @return 用户分页列表
